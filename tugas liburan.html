@@ -1,0 +1,132 @@
+
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Media Sederhana</title>
+    
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="tugas.css">
+    
+    <!-- Font Awesome untuk ikon (opsional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header halaman -->
+    <header>
+        <h1><i class="fas fa-images"></i> Galeri Media</h1>
+        <p>Koleksi foto dan video menarik</p>
+    </header>
+
+    <!-- Container utama untuk grid -->
+    <main class="gallery-container">
+        <!-- Card 1 - Gambar -->
+        <div class="card" data-type="image">
+            <div class="media-wrapper">
+                <img src="https://picsum.photos/seed/mountain1/400/300.jpg" alt="Pegunungan">
+                <div class="media-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Pegunungan Megah</h3>
+                <p>Pemandangan pegunungan yang memukau di pagi hari dengan kabut tipis.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 - Video -->
+        <div class="card" data-type="video">
+            <div class="media-wrapper">
+                <video controls poster="https://picsum.photos/seed/ocean1/400/300.jpg">
+                    <source src="./images/WhatsApp Video 2026-03-13 at 14.58.46.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video tag.
+                </video>
+                <div class="media-overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>memasak</h3>
+                <p>Video memasak untuk keluarga.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 - Gambar -->
+        <div class="card" data-type="image">
+            <div class="media-wrapper">
+                <img src="https://picsum.photos/seed/forest1/400/300.jpg" alt="Hutan">
+                <div class="media-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Hutan Hijau</h3>
+                <p>Hutan tropis yang lebat dengan pepohonan rindang dan segar.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 - Gambar -->
+        <div class="card" data-type="image">
+            <div class="media-wrapper">
+                <img src="https://picsum.photos/seed/city1/400/300.jpg" alt="Kota">
+                <div class="media-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Kota Metropolitan</h3>
+                <p>Pemandangan kota modern dengan gedung pencakar langit.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 - Video -->
+        <div class="card" data-type="video">
+            <div class="media-wrapper">
+                <video controls poster="https://picsum.photos/seed/sunset1/400/300.jpg">
+                    <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video tag.
+                </video>
+                <div class="media-overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Matahari Terbenam</h3>
+                <p>Video time-lapse matahari terbenam yang indah di pantai.</p>
+            </div>
+        </div>
+
+        <!-- Card 6 - Gambar -->
+        <div class="card" data-type="image">
+            <div class="media-wrapper">
+                <img src="https://picsum.photos/seed/flower1/400/300.jpg" alt="Bunga">
+                <div class="media-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Kebun Bunga</h3>
+                <p>Koleksi bunga-bunga indah dengan warna-warna cerah.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal untuk menampilkan gambar/video lebih besar -->
+    <div id="mediaModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" style="display:none;">
+            <video id="modalVideo" controls style="display:none;"></video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Galeri Media Sederhana.<i class="fas fa-heart"></i></p>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="tugas.js"></script>
+</body>
+</html>
